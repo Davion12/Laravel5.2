@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function () {
+
+Route::get("/", function (){
     return redirect("/login");
 });
 
@@ -20,3 +21,4 @@ Route::auth();
 Route::get("/home", function (){
     return view("home");
 });
+

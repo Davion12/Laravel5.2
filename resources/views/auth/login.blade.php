@@ -21,9 +21,11 @@
                    style="color:#cecdcd;position:  relative;top: 25px; font-size: large">
             <input id="password" class="form_style" tabindex=-1 name="password" type="text" value="密码"
                    style="color:#cecdcd;position:  relative;top: 60px;font-size: large">
-
+            @if (($errors->has('email')) || ($errors->first('password')))
+                  <p class="error_style">账号密码错误</p>
+            @endif
             <input class="form_style submit_style" tabindex=-1 type="submit" value="登录">
-            <a href="{{ url('/password/reset')}}" style="position:  relative;top: 98px;font-size: 15px;right:  -72px; text-decoration: none"><p>忘记密码</p></a>
+            <a href="{{ url('/password/reset')}}" style="position: absolute;top: 200px;font-size: 15px;right: -72px;text-decoration: none;left: 150px;width: 80px;height: 40px;"><p>忘记密码</p></a>
         </form>
     </div>
 </div>

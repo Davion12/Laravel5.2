@@ -18,7 +18,12 @@ Route::get("/", function (){
 
 Route::auth();
 
+
 Route::get("/home", function (){
     return view("home");
+});
+
+Route::get("/menu", function (){
+   return view("Menu.main");
 });
 

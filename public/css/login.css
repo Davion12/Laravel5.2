@@ -57,13 +57,14 @@ input.form_style {
 }
 
 .submit_style {
-    position: relative;
-    top: 110px;
+    position: absolute;
+    top: 180px;
     border-radius: 8px;
     background-color: #2db0f9;
-    cursor:pointer;
+    cursor: pointer;
     border: 0;
     color: white;
+    left: -0px;
 }
 
 .layout{
@@ -122,4 +123,12 @@ input.form_style {
     height: 20px;
     width: 250px;
     color: #cecbcb;
+}
+
+.error_style{
+    position: relative;
+    top: 55px;
+    left: -75px;
+    font-size: small;
+    color: red;
 }

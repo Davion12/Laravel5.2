@@ -1,0 +1,57 @@
+table, td, th {
+    border: 1px solid black;
+    height: 40px;
+    text-align: center;
+    width: 200px;
+    border-collapse: collapse;
+}
+
+td#page_name {
+    height: 60px;
+}
+
+.nav {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.person_info {
+    position: fixed;
+    top: 0;
+    left: 200px;
+    height: 62px;
+    border: 1px solid;
+    right: 0px;
+}
+
+.person_info_area {
+    position: fixed;
+    right: 0px;
+    left: 80%;
+    height: 40px;
+    top: 26px;
+}
+
+.display-person-info {
+    cursor: pointer;
+}
+
+.exit {
+    cursor: pointer;
+}
+
+.child-table {
+    display: none;
+    cursor: pointer;
+}
+.child-table td:hover {
+    background-color: #cecbcb;
+}
+table.child-table {
+    width: 100px;
+    border: 1px;
+    position: relative;
+    top: 13px;
+}
